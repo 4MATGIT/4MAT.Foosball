@@ -5,11 +5,14 @@ Introduction
 
 Requirements
 The developer has promised that the application will:
+
 * Allow users to enter player scores 
 * Allow clients to see a leader board
 * Look like the signed off designs
 * Allow users to input and view scores across desktop, tablet and mobile devices
+
 He also told people that it might:
+
 * Show trends over different periods of time
 * Give us a breakdown of when people play
 * Send an email, Microsoft Teams message or other browser notification to tell us who has won for every week
