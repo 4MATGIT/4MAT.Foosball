@@ -18,17 +18,11 @@ namespace _4MAT.Foosball.Controllers
             _foosballRepository = foosballRepository;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var games = await _foosballRepository.RecentGames(DateTime.Now.AddDays(-7));
+            var games = _foosballRepository.RecentGames(DateTime.Now.AddDays(-7));
             return View(games);
         }
-
-        //public IActionResult Index()
-        //{
-        //    var games = _foosballRepository.RecentGames(DateTime.Now.AddDays(-7));
-        //    return View(games);
-        //}
 
         public IActionResult LogGame()
         {
